@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para la seccion de inicio */
+
+
+/* Al inicio se define el alto y el ancho */
+
+.div-inicio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Le damos estilos al titulo*/
+
+.div-inicio .div-texto h1 {
+    color: #fff;
+    font-size: 70px;
+    font-family: 'Agency FB';
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Se le pone una imagen como fondo al inicio */
+
+.div-inicio .div-imagen-fondo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background: radial-gradient(transparent 70%, #111a), linear-gradient(transparent 30%, #111a 45%, #111 75%), url("./fondo.jpg");
+    z-index: -2;
+}
+
+
+/* Estilos para la seccion del cuerpo */
+
+.div-cuerpo {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #111;
+}
+
+.div-cuerpo .div-descripcion {
+    width: 60%;
+    margin-bottom: 5%;
+    border: 2px solid #656565;
+    border-radius: 5px;
+    height: auto;
+    padding: 40px 20px 40px 20px;
+}
+
+.div-cuerpo .div-descripcion h2 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Agency FB';
+}
+
+.div-cuerpo .div-descripcion p {
+    font-size: 30px;
+    color: white;
+    font-family: 'Helvetica';
+}
+
+
+/* Estilos para las secciones de las listas */
+
+.div-cuerpo .div-lista {
+    width: 60%;
+    margin-bottom: 5%;
+    border: 2px solid #656565;
+    border-radius: 5px;
+    height: auto;
+    padding: 40px 20px 40px 20px;
+}
+
+.div-cuerpo .div-lista h2 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Agency FB';
+}
+
+.div-cuerpo .div-lista li {
+    margin-left: 50px;
+}
+
+.div-cuerpo .div-lista li,
+button {
+    font-size: 30px;
+    color: white;
+    font-family: 'Helvetica';
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+/* Estilos para que la pagina se adapte  cualquier dispositivo */
+
+@media (max-width: 850px) {
+    .div-inicio .div-texto h1 {
+        font-size: 40px;
+    }
+    .div-cuerpo .div-descripcion {
+        width: 90%;
+    }
+    .div-cuerpo .div-lista {
+        width: 90%;
+    }
+    .div-cuerpo .div-descripcion h2 {
+        font-size: 40px;
+    }
+    .div-cuerpo .div-lista h2 {
+        font-size: 40px;
+    }
+    .div-cuerpo .div-descripcion p {
+        font-size: 20px;
+    }
+    .div-cuerpo .div-lista li,
+    button {
+        font-size: 20px;
+    }
+}
